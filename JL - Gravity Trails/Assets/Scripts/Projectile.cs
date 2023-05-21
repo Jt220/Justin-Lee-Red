@@ -26,7 +26,8 @@ public class Projectile : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject); 
+            Destroy(collision.gameObject);
+            Teleport.enemyCount -= 1;
             Destroy(gameObject);
         }
     }

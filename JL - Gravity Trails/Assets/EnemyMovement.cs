@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         enemyRigidBody = GetComponent<Rigidbody2D>();
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
